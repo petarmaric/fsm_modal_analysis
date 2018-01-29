@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='fsm_modal_analysis',
-    version='1.0.0',
+    version='1.0.1',
     url='https://bitbucket.org/petar/fsm_modal_analysis',
     license='BSD',
     author='Petar Maric',

@@ -1,0 +1,12 @@
+fsm_modal_analysis 1.0.1 (January 29, 2018)
+===========================================
+
+Bugfixes
+--------
+
+    * Fixed a module discovery issue in setup.py, resulting in a broken package.
+
+fsm_modal_analysis 1.0.0 (January 29, 2018)
+===========================================
+
+    * Initial release.
