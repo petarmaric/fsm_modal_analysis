@@ -1,0 +1,4 @@
+matplotlib~=2.1
+numpy~=1.11
+PyYAML~=3.11
+tables~=3.2
