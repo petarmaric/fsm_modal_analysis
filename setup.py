@@ -25,7 +25,7 @@ setup(
         'Topic :: Scientific/Engineering :: Physics',
     ],
     platforms='any',
-    py_modules=['physical_dualism'],
+    py_modules=['fsm_modal_analysis'],
     entry_points={
         'console_scripts': ['fsm_modal_analysis=fsm_modal_analysis:main'],
     },
