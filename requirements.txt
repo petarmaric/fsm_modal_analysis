@@ -1,3 +1,4 @@
+dynamic_pytables_where_condition~=1.0
 matplotlib~=2.1
 numpy~=1.11
 PyYAML~=3.11

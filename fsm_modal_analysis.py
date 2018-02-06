@@ -6,6 +6,7 @@ from timeit import default_timer as timer
 import matplotlib
 matplotlib.use('Agg') # Fixes weird segfaults, see http://matplotlib.org/faq/howto_faq.html#matplotlib-in-a-web-application-server
 
+from dynamic_pytables_where_condition import read_from_table
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 from mpl_toolkits.mplot3d import Axes3D
@@ -83,31 +84,6 @@ def plot_modal_composite(base_key, modal_composites, column_units, column_descri
         plt.ylabel(_get_column_title('t_b'))
 
     logging.info("Plotting completed in %f second(s)", timer() - start)
-
-_LIMIT_TO_OPERATOR = {
-    'min': '>=',
-    'max': '<=',
-}
-def get_where_condition(**filters):
-    def _extract(key):
-        col_name, limit = key.rsplit('_', 1)
-        return col_name, _LIMIT_TO_OPERATOR[limit]
-
-    condition_parts = [
-        _extract(key) + (val,)
-        for key, val in sorted(filters.items())
-        if val is not None
-    ]
-    return ' & '.join(
-        "(%s %s %s)" % (col, op, val)
-        for col, op, val in condition_parts
-    )
-
-def read_from_table(table, **filters):
-    condition = get_where_condition(**filters)
-    logging.debug("Constructed the PyTables where condition '%s' from these filters: %s", condition, filters)
-
-    return table.read_where(condition) if condition else table.read()
 
 def load_modal_composites(results_file, **filters):
     logging.info("Loading modal composites from '%s'...", results_file)
