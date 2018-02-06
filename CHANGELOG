@@ -1,3 +1,16 @@
+fsm_modal_analysis 1.0.2 (February 6, 2018)
+===========================================
+
+Refactoring
+-----------
+
+    * Decoupled the `load_modal_composites` function to
+      https://bitbucket.org/petar/fsm_load_modal_composites for reusability.
+
+    * Decoupled the ``get_where_condition`` and ``read_from_table`` functions
+      to https://bitbucket.org/petar/dynamic_pytables_where_condition for
+      reusability.
+
 fsm_modal_analysis 1.0.1 (January 29, 2018)
 ===========================================
 

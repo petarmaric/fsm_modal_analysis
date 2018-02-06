@@ -13,7 +13,7 @@ from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 
 
-__version__ = '1.0.1'
+__version__ = '1.0.2'
 
 
 DEFAULT_CMAP = 'inferno'
