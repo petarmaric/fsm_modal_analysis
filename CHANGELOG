@@ -1,3 +1,11 @@
+fsm_modal_analysis 1.0.3 (August 29, 2019)
+==========================================
+
+Bugfixes
+--------
+
+    * Migrated from Bitbucket (Mercurial) to GitHub (Git).
+
 fsm_modal_analysis 1.0.2 (February 6, 2018)
 ===========================================
 
