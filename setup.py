@@ -12,7 +12,7 @@ setup(
                 'analysis of the parametric model of buckling and free '\
                 'vibration in prismatic shell structures, as computed by the '\
                 'fsm_eigenvalue project.',
-    long_description=open('README').read(),
+    long_description=open('README.rst').read(),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Console',
