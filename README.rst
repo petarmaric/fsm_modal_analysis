@@ -15,7 +15,7 @@ References
 .. [ON174027]
    "Computational Mechanics in Structural Engineering"
 
-.. _`fsm_eigenvalue project`: http://bitbucket.org/petar/fsm_eigenvalue
+.. _`fsm_eigenvalue project`: https://github.com/petarmaric/fsm_eigenvalue
 
 Installation
 ============
@@ -59,6 +59,6 @@ If you find any bugs, or wish to propose new features `please let us know`_.
 If you'd like to contribute, simply fork `the repository`_, commit your changes
 and send a pull request. Make sure you add yourself to `AUTHORS`_.
 
-.. _`please let us know`: https://bitbucket.org/petar/fsm_modal_analysis/issues/new
-.. _`the repository`: http://bitbucket.org/petar/fsm_modal_analysis
-.. _`AUTHORS`: https://bitbucket.org/petar/fsm_modal_analysis/src/default/AUTHORS
+.. _`please let us know`: https://github.com/petarmaric/fsm_modal_analysis/issues/new
+.. _`the repository`: https://github.com/petarmaric/fsm_modal_analysis
+.. _`AUTHORS`: https://github.com/petarmaric/fsm_modal_analysis/blob/master/AUTHORS
